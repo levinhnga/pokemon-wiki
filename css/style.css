@@ -29,6 +29,12 @@ p {
     max-width: 500px;
 }
 
+.card_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 50px 0px 50px;
+}
+
 .card {
     background-image: url("../img/card_background_color.jpg");
     width: 353px;
@@ -60,6 +66,15 @@ p {
     margin-right: 30px;
 }
 
+.card_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 .card_bottom button {
     background-image: url("../img/button_background_color.jpg");
     background-position: center;
@@ -70,8 +85,6 @@ p {
     border-color: transparent;
     width: 118px;
     height: 36px;
-    margin-left: 27px;
-    margin-top: 15px;
 }
 
 .card_bottom button:hover {
@@ -84,8 +97,51 @@ p {
     height: 36px;
     background-color: white;
     border-radius: 50%;
+    margin-left: 20px;
 }
 
 .logo_circle img {
+    padding: 5%;
     width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    .header img {
+        width: 70%;
+        max-width: 500px;
+    }
+
+    .card_container {
+        display: block;
+    }
+
+    .card {
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    /* .card_container {
+        margin: 50px 20px 0px 20px;
+    }
+
+    .card {
+        width: 203px;
+        height: 365px;
+    }
+
+    .card_image {
+        width: 180px;
+        height: 136px;
+    } */
+  }
+
+@media only screen and (max-width: 992px) {
+body {
+    background-color: lightblue;
+}
 }
